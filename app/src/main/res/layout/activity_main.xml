@@ -1,16 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
     <TextView
-            android:text="@string/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/name_tv" android:textAlignment="center"
-            style="@style/NameStyle"/>
+        android:text="@string/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_tv"
+        android:textAlignment="center"
+        style="@style/NameStyle"
+        />
+
     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        android:id="@+id/star_image"
+        android:contentDescription="@string/yellow_star"
+        android:layout_marginTop="@dimen/layout_margin"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" app:srcCompat="@android:drawable/btn_star_big_on"
-            android:id="@+id/star_image" android:contentDescription="@string/yellow_star"
-            android:layout_marginTop="@dimen/layout_margin"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/bio_image"
+                app:srcCompat="@mipmap/ic_launcher"
+                />
+
+            <TextView
+                android:text="@string/bio_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bio_text"
+                android:lineSpacingMultiplier="1.2"
+                style="@style/NameStyle"
+                android:paddingEnd="@dimen/layout_margin"
+                android:paddingStart="@dimen/layout_margin"
+                />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

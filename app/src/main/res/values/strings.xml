@@ -2,4 +2,24 @@
     <string name="app_name">AboutMe</string>
     <string name="name">Jonathan Lin</string>
     <string name="yellow_star">Yellow star</string>
+    <string name="bio_text">
+        ABOUT JONATHAN
+        \nYorba Linda, CA
+        \n\nEmail: jonathanlin108@gmail.com
+        \n\nI am a programmer of things. I immmensely enjoy coding, debugging, and testing. In every project I strive to create frictionless experiences for users through an iterative agile workflow of testing and analysis. A directed curiosity and being a fast learner are my biggest strengths.
+
+        \n\nSKILLS
+
+        \n\nProgramming Languages:
+        \nKotlin, Java, C/C++, C#, MySQL, Android
+        \nGraphic/Web:
+        \nHTML5, CSS3, Javascript
+        \nSoftware Engineering:
+        \nAgile Processes, Software lifecycle, Continuous Integration (CI)
+        \n\nEDUCATION
+
+        \nUniversity of California, San Diego
+        \nB.S., Computer Science
+        \nComputer Graphics
+    </string>
 </resources>
